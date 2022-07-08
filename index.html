@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<header>
+    <h1>
+        Editor HTML & CSS
+    </h1>
+</header>
+
+<body>
+    <!--Section which contain button to set max characters-->
+    <div id="CharacSelec">
+        <button onclick="setBase()">b</button>
+        <button onclick="displayInput(); displayButton()">i</button>
+        <input type="number" name="nbchar" id="nbchar">
+        <button onclick="setInput()" id="valider">Valider</button>
+
+    </div>
+    <!--The HTML area which contain the textarea and the tags button -->
+    <div id="TextArea">
+        <h2>HTML & Text</h2>
+        <div id="Container">
+    <textarea name="areatext" class="areatext" cols="150" rows="10" maxlength="200" placeholder="Entrez votre code ici"></textarea>
+        <div id="List">
+            <button class='ButtonsHtml' value="<div></div>">DIV</button>
+            <button class='ButtonsHtml' value="<input />">INPUT</button>
+            <button class='ButtonsHtml' value="<button></button>">BUTTON</button>
+            <button class='ButtonsHtml' value="<ul></ul>">UL</button>
+            <button class='ButtonsHtml' value="<li></li>">LI</button>
+            <button class='ButtonsHtml' value="<nav></nav>">NAV</button>
+            <button class='ButtonsHtml' value="<h1></h1>">H1</button>
+            <button class='ButtonsHtml' value="<h3></h3>">H3</button>
+            <button class='ButtonsHtml' value="<p></p>">P</button>
+            <button class='ButtonsHtml' value="</br>">BR</button>
+        </div>
+    </div>
+    <!--The CSS area which contain the textarea and the css properties buttons -->
+    <h2>Css</h2>
+    <div id="Container">
+    <textarea name="areacss" class="areacss" cols="150" rows="10" maxlength="200" placeholder="Entrez votre code ici"></textarea>
+        <div id="List">
+            <button class="ButtonsCss" value="background:">Background</button>
+            <button class="ButtonsCss" value="color:">Color</button>
+            <button class="ButtonsCss" value="position:">Position</button>
+            <button class="ButtonsCss" value="display:">Display</button>
+            <button class="ButtonsCss" value="width:">Width</button>
+            <button class="ButtonsCss" value="height:">Height</button>
+            <button class="ButtonsCss" value="border-radius:">BorderRadius</button>
+            <button class="ButtonsCss" value="margin:">Margin</button>
+            <button class="ButtonsCss" value="padding:">Padding</button>
+            <button class="ButtonsCss" value="justify-content:">JustifyContent</button>
+
+        </div>
+    </div>
+    <!--The JavaScript area which contain the textarea and the js metod buttons -->
+    <h2>JavaScript</h2>
+    <div id='Container'>
+    <textarea name="areajs" class="areajs" cols="150" rows="10" maxlength="200" placeholder="Entrez votre code ici"></textarea>
+    <div id="List">
+        <button class="ButtonsJs" value="document.getElementBy">document.getElementBy</button>
+        <button class="ButtonsJs" value="document.querySelector">document.querySelector</button>
+        <button class="ButtonsJs" value="if">if</button>
+        <button class="ButtonsJs" value="else">else</button>
+        <button class="ButtonsJs" value="else if">else if</button>
+        <button class="ButtonsJs" value="for">for</button>
+        <button class="ButtonsJs" value="while">while</button>
+        <button class="ButtonsJs" value="console.log">console.log</button>
+        <button class="ButtonsJs" value="switch">switch</button>
+        <button class="ButtonsJs" value="forEach">forEach</button>
+    </div>
+    </div>
+
+    </div>
+    <!--Progress bar and the characters counter-->
+    <div id="ProgressBar"></div>
+    <p id="CountCharac"></p>
+    <div class="container">
+        <!--The result of all you type in text area above-->
+        <h2>Live_Coding</h2>
+        <p id='resultat'>
+            
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

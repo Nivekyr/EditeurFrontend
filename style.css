@@ -1,0 +1,58 @@
+
+#ProgressBar {
+    max-width: 400px;
+    background-color: green;
+    height: 1vh;
+    width: 0;
+}
+
+#nbchar {
+    display: none;
+}
+
+#valider {
+    display: none;
+}
+
+label {
+    float: left
+}
+
+#Container {
+    display: flex;
+}
+
+#List {
+    width: 30%;
+
+}
+
+.ButtonsHtml {
+    width: 5vw;
+    height: 5vw;
+}
+
+.ButtonsJs {
+    width: 5vw;
+    height: 5vw;
+}
+.ButtonsCss {
+    width: 5vw;
+    height: 5vw;
+}
+
+
+textarea {
+    width: 50%;
+}
+
+button {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 10%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
